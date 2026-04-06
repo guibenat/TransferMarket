@@ -24,9 +24,24 @@ public class Gerenciador {
         double valor = sc.nextDouble();
         sc.nextLine();
 
-        Jogador novoJogador = new Jogador(nomeJogador, over, posicao, idade, valor);
+        Jogador novoJogador = new Jogador(nomeJogador, over, valor, posicao, idade);
         jogadores.add(novoJogador);
 
         System.out.printf("O jogador %s assinou o contrato.", nomeJogador);
+    }
+
+    public void  listarJogador(){
+        System.out.println("Elenco atual: ");
+        for(Jogador j : jogadores){
+            System.out.printf("Nome: %s | Posição: %s | Over: %d | Idade: %d | Valor R$ %.2f\n",
+            j.getNomeJogador(), j.getposicao(), j.getover(), j.getidade(), j.getvalor());
+        }
+    }
+    public void atualizarJogador() {
+
+    }
+
+    public void dispensarJogador(){
+
     }
 }
