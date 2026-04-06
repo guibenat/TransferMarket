@@ -13,9 +13,7 @@ public class Jogador {
         this.over = over;
     }
 
-    public String getNomeJogador(){
-        return nomeJogador;
-    }
+    public String getNomeJogador(){return nomeJogador;}
     public void setNomeJogador(String nomeJogador) {
         this.nomeJogador = nomeJogador;
     }
@@ -41,9 +39,7 @@ public class Jogador {
         this.posicao = posicao;
     }
 
-    public int getover(){
-        return over;
-    }
+    public int getover(){return over;}
     public void setover(int over) {
         this.over = over;
     }
