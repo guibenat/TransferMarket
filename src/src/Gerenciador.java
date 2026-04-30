@@ -37,11 +37,20 @@ public class Gerenciador {
             j.getNomeJogador(), j.getposicao(), j.getover(), j.getidade(), j.getvalor());
         }
     }
-    public void atualizarJogador() {
+    public void atualizarJogador(Jogador jogadorNovo) {
+        for (int i = 0; i < jogadores.size(); i++) {
+            Jogador jogadorAtual = jogadores.get(i);
 
+            if (jogadorAtual.getNomeJogador() == jogadorNovo.getNomeJogador()){
+                jogadores.set(i, jogadorNovo);
+                System.out.println("Jogador atualizado com sucesso!");
+                return;
+            }
+        }
     }
 
-    public void dispensarJogador(){
+    public void dispensarJogador(int idDispensa){
+        
 
     }
 }
